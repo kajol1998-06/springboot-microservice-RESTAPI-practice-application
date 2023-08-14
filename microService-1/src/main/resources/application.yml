@@ -1,0 +1,14 @@
+
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  application:
+    name: 'greeting-application'
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/  
