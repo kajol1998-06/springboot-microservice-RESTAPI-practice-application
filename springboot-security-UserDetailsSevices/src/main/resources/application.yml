@@ -1,0 +1,41 @@
+Spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: kajol@123
+    url: jdbc:h2:mem:testdb
+    username: kajol
+spring:
+  h2:
+    console:
+      enabled: true  
+      path: /h2-console
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: c8f7ad7b271f0181ec1c
+            client-secret: 053159362c3df3da8a639885a6c4ddada516e99c      
+  
+# H2 Console Configuration
+#spring.h2.console.enabled=true
+#spring.h2.console.path=/h2-console
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Spring Security Configuration to bypass security for H2 Console
+#spring.security.user.name=admin
+#spring.security.user.password=admin
+#spring.security.user.roles=ADMIN
+#spring.security.ignored=/**
